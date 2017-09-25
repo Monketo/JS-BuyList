@@ -2,13 +2,51 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-
+    <title>Grocery store</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-<h1>Hello World</h1>
-<p>Hello Git</p>
+<div class="grocery board">
+    <div class="form-add">
+        <input type="text" name="newItem" placeholder="Add your item here"><button class="addItem">Add</button>
+    </div>
+    <div class="list">
+    <div class="item row">
+        <div class ="column appelation">Bananas</div>
+        <div class="column actions"><button class="subtract circle"><span class="minus icon">–</span></button>
+            <span class="num_left">1</span>
+            <button class="add circle"><span class="plus icon">+</span></button>
+        </div><div class="column actions complete">
+            <button class="bought" >Bought</button>
+            <button class="delete" ><span class="delete icon">×</span></button>
+        </div></div>
+    <div class="item row "><div class ="column appelation">Apples</div>
+        <div class="column actions">
+        <button class="subtract circle"><span class="minus icon">–</span></button>
+        <span class="num_left">1</span>
+        <button class="add circle"><span class="plus icon">+</span></button>
+    </div><div class="column actions complete">
+            <button class="bought" >Bought</button>
+            <button class="delete" ><span class="delete icon">×</span></button>
+        </div>
+    </div>
+    <div class="item row"><div class ="column appelation">Strawberries</div>
+        <div class="column actions">
+            <button class="subtract circle"><span class="minus icon">–</span></button>
+            <span class="num_left">1</span>
+            <button class="add circle"><span class="plus icon">+</span></button>
+    </div><div class="column actions complete">
+            <button class="bought" >Bought</button>
+            <button class="delete" ><span class="delete icon">×</span></button>
+        </div>
+</div>
+    </div>
+</div>
+<div class="grocery report">
+
+</div>
+
+
 </body>
 </html>
