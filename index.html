@@ -7,46 +7,63 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
+<div class="container">
 <div class="grocery board">
     <div class="form-add">
-        <input type="text" name="newItem" placeholder="Add your item here"><button class="addItem">Add</button>
+        <input type="text" name="newItem" placeholder="Add your item here"><button class="addItem" data-tooltip="Add new item here">Add</button>
     </div>
     <div class="list">
     <div class="item row">
         <div class ="column appelation">Bananas</div>
-        <div class="column actions"><button class="subtract circle"><span class="minus icon">–</span></button>
+        <div class="column "><button class="subtract circle" data-tooltip="decrement"><span class="minus icon">–</span></button>
             <span class="num_left">1</span>
-            <button class="add circle"><span class="plus icon">+</span></button>
-        </div><div class="column actions complete">
-            <button class="bought" >Bought</button>
-            <button class="delete" ><span class="delete icon">×</span></button>
+            <button class="add circle" data-tooltip="Increment "><span class="plus icon">+</span></button>
+        </div><div class="column  complete">
+            <button class="bought trigger" data-tooltip="Move to bought " >Bought</button>
+            <button class="delete" data-tooltip="Remove " ><span class="icon">×</span></button>
         </div></div>
     <div class="item row "><div class ="column appelation">Apples</div>
-        <div class="column actions">
-        <button class="subtract circle"><span class="minus icon">–</span></button>
+        <div class="column ">
+        <button class="subtract circle" data-tooltip="decrement"><span class="minus icon">–</span></button>
         <span class="num_left">1</span>
-        <button class="add circle"><span class="plus icon">+</span></button>
-    </div><div class="column actions complete">
-            <button class="bought" >Bought</button>
-            <button class="delete" ><span class="delete icon">×</span></button>
+        <button class="add circle" data-tooltip="Increment " ><span class="plus icon">+</span></button>
+    </div><div class="column  complete">
+            <button class="bought trigger"  data-tooltip="Move to bought ">Bought</button>
+            <button class="delete" data-tooltip="Remove "><span class=" icon">×</span></button>
         </div>
     </div>
     <div class="item row"><div class ="column appelation">Strawberries</div>
-        <div class="column actions">
-            <button class="subtract circle"><span class="minus icon">–</span></button>
+        <div class="column ">
+            <button class="subtract circle " data-tooltip="decrement"><span class="minus icon">–</span></button>
             <span class="num_left">1</span>
-            <button class="add circle"><span class="plus icon">+</span></button>
-    </div><div class="column actions complete">
-            <button class="bought" >Bought</button>
-            <button class="delete" ><span class="delete icon">×</span></button>
+            <button class="add circle" data-tooltip="Increment " ><span class="plus icon">+</span></button>
+    </div><div class="column  complete">
+            <button class="bought trigger"  data-tooltip="Move to bought ">Bought</button>
+            <button class="delete" data-tooltip="Remove "><span class="icon">×</span></button>
         </div>
 </div>
     </div>
 </div>
 <div class="grocery report">
+    <div class="segment"><h3>Left to buy</h3></div>
+    <div class="segment container">
+        <span class="need_buy">Bananas<span class="num_to_buy">1</span></span>
+        <span class="need_buy">Apples<span class="num_to_buy">1</span></span>
+        <span class="need_buy">Strawberries<span class="num_to_buy">1</span></span>
+    </div>
+    <div class="segment b_container"><h3>Bought</h3></div>
 
 </div>
 
+</div>
+<div class="badge">
+    <div class="author">Created by <strong>Igor Protsenko</strong></></div>
+<div class="hoverme"><span class="usual">Hover me</span><span class="print">Protsenko I.</span></div>
+</div>
 
+
+<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+<script src="main.js"></script>
 </body>
 </html>
